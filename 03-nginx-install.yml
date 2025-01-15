@@ -1,0 +1,7 @@
+- name: Install and Run Nodejs
+  hosts: web
+  tasks: 
+  - name: install nodejs
+    ansible.builtin.package:
+  - name: run nodejs
+    ansible.builtin.service:
