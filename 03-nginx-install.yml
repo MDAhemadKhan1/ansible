@@ -1,7 +1,8 @@
-- name: Install and Run Nodejs
+- name: Install and Run Nginx
   hosts: web
   tasks: 
-  - name: install nodejs
+  - name: install Nginx
     ansible.builtin.package:
-  - name: run nodejs
+
+  - name: run Nginx
     ansible.builtin.service:
