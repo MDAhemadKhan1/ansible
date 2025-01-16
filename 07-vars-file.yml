@@ -1,6 +1,6 @@
 - name: Task Var
   hosts: local
-  vars_files: 
+  vars: 
    - course.yml
 
   tasks: 
@@ -8,10 +8,10 @@
     vars: 
      Course: "Ansible"
     ansible.builtin.debug:
-     msg: "Course is {{Course}},Trainer is {{Trainer}},Duration is {{Duration}}"
+     msg: "Course is {{Course}}"
 
   - name: Print Variables
     ansible.builtin.debug:
-     msg: "Course is {{Course}}"   
+     msg: "Course is {{Course}},Trainer is {{Trainer}},Duration is {{Duration}}"   
 
     
