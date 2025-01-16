@@ -6,7 +6,7 @@
   tasks: 
   - name: task variable
     vars: 
-     Course: "Ansible"
+     - Course: "Ansible"
     ansible.builtin.debug:
      msg: "Course is {{Course}}"
 
