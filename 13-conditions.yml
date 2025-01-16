@@ -5,12 +5,12 @@
     prompt: please enter the number......
   tasks:
   - name: Print if number is Greater than 10
-    ansibl.builtin.debug:
+    ansible.builtin.debug:
      msg: "{{My_Number}} is graeter than 10"
     when: My_Number > 10
 
   - name: Print if number is Greater than 10
-    ansibl.builtin.debug:
+    ansible.builtin.debug:
      msg: "{{My_Number}} is less than 10"
     when: My_Number <= 10
 
