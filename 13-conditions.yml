@@ -1,8 +1,7 @@
 - name: Conditions
   hosts: local
-  vars_prompt:
-  - name: My_Number
-    prompt: please enter the number......
+  vars:
+   my_number: 100
   tasks:
   - name: Print if number is Greater than 10
     ansible.builtin.debug:
