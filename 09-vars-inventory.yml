@@ -1,0 +1,5 @@
+- name: Inventory
+  hosts: local
+  tasks: 
+  - name: Vars from Inventory
+    
