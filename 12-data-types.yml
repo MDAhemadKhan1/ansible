@@ -10,7 +10,7 @@
    tools: #Map
     ci: Jenkins
     cloud: aws
-  live: true    #Boolean
+   live: true    #Boolean
   tasks: 
   - name: All Data Types
     ansible.builtin.debug:
