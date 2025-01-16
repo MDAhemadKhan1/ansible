@@ -1,0 +1,20 @@
+- name: Play Variables
+  hosts: local
+  vars: 
+   Course: "DevOps"
+  vars_files: 
+   course.yml
+  vars_prompt:
+  - name: Course
+    prompt: ener the course here......
+
+  tasks:
+  - name: From Task
+    vars: 
+     Course: "Ansible"
+    ansible.builtin.debug:
+     msg: "Course is {{Course}}"
+
+  - name: From Play
+    ansible.builtin.debug:
+     msg: "Course is {{Course}}"
