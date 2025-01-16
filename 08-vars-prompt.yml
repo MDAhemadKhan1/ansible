@@ -1,0 +1,14 @@
+- name: Promp
+  hosts: local
+  vars_prompt:
+  - name: Course
+    prompt: "Please enter the Course here....."
+  - name: Trainer
+    prompt: "Please enter the Trainer name here....."
+  - name: Duration
+    prompt: "Please enter the Duration here....."
+
+  tasks:
+  - name: Vars from Prompt
+    ansible.bultin.debug:
+     msg: "Course is {{Course}},trainer is {{Trainer}},Duration is {{Duration}}
