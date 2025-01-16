@@ -2,7 +2,7 @@
   hosts: local
   vars: 
    Course: "DevOps" #String
-   Durartion: 120   #Number
+   Duration: 120   #Number
    topics:          #List
     - Shell-Scripting
     - Ansible
