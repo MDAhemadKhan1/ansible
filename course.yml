@@ -1,4 +1,3 @@
- vars: 
-   - Course: "DevOps with AWS"
-   - Trainer: "Asif"
-   - Duration: "120Hrs"
+    Course: "DevOps with AWS"
+    Trainer: "Asif"
+    Duration: "120Hrs"
