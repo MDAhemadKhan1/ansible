@@ -11,4 +11,4 @@
   tasks:
   - name: Vars from Prompt
     ansible.bultin.debug:
-     msg: "Course is {{Course}},trainer is {{Trainer}},Duration is {{Duration}}
+     msg: "Course is {{Course}},trainer is {{Trainer}},Duration is {{Duration}}""
