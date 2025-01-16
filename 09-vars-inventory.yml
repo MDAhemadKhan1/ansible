@@ -2,4 +2,6 @@
   hosts: local
   tasks: 
   - name: Vars from Inventory
+    ansible.builtin.debug:
+     msg: "Course is {{Course}},trainer is {{Trainer}},Duration is {{Duration}}"
     
