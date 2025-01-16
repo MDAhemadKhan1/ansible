@@ -4,12 +4,6 @@
    - course.yml
 
   tasks: 
-  - name: task variable
-    vars: 
-     Course: "Ansible"
-    ansible.builtin.debug:
-     msg: "Course is {{Course}}"
-
   - name: Print Variables
     ansible.builtin.debug:
      msg: "Course is {{Course}},Trainer is {{Trainer}},Duration is {{Duration}}"   
