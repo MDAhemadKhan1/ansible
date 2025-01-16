@@ -5,7 +5,7 @@
    - Trainer: "Asif"
    - Duration: "120Hrs"
   
-  tasks: print variables
+  tasks:
   - name: Print Variables
     ansible.builtin.debug:
      Msg: "Course is "{{Course}}",Trainer is "{{Trainer}}",Duration is "{{Duration}}""
