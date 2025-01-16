@@ -1,6 +1,6 @@
 - name: Task Var
   hosts: local
-  vars: 
+  vars_files: 
    - course.yml
 
   tasks: 
