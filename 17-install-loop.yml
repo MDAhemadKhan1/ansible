@@ -1,5 +1,6 @@
 - name: Install Multiple Packages
   hosts: local
+  become: yes
   tasks:
   - name: Install Packages
     ansible.builtin.package:
