@@ -2,7 +2,7 @@
   hosts: local
   tasks:
   - name: Install Packages
-    ancible.builtin.package:
+    ansible.builtin.package:
       name: "{{ item }}"
       state: present
     loop:
