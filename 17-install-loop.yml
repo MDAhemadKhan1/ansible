@@ -1,0 +1,11 @@
+- name: Install Multiple Packages
+  hosts: local
+  tasks:
+  - name: Install Packages
+    ancible.builtin.package:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - mysql
+    - gcc
+   
