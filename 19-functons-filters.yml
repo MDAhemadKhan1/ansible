@@ -11,4 +11,11 @@
      ansible.builtin.debug:
       msg: "Fruits are: {{Fruits | split(',')}}"
 
-
+   - name: 
+     vars:
+      Course:
+       name: DevOps
+       duration: 120hrs
+       trainer: Asif
+    ansible.builtin.debug:
+      msg: "Course info :: Course is {{name}} duration is {{duration}} trainer is {{trainer}}"
