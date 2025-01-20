@@ -3,5 +3,5 @@
   tasks: 
    - name: handle undifined case
      ansible.builtin.debug:
-      msg: "Hello {{ person }}"
+      msg: "Hello {{ person | default('Adam')}}"
 
