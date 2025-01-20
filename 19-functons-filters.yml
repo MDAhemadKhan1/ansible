@@ -17,5 +17,5 @@
        name: DevOps
        duration: 120hrs
        trainer: Asif
-    ansible.builtin.debug:
-      msg: "Course info :: Course is {{name}} duration is {{duration}} trainer is {{trainer}}"
+     ansible.builtin.debug:
+      msg: "Course info :: Course is {{name}} duration is {{duration}} trainer is {{trainer}}"  
