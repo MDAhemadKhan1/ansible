@@ -34,18 +34,18 @@
      vars:
       name: "Asif"
      ansible.builtin.debug:
-      msg: " name is :: {{name}}"
+      msg: " name is :: {{name | upper}}"
 
    - name: Converting to lower
      vars:
       name: "Asif"
      ansible.builtin.debug:
-      msg: " name is :: {{name}}"
+      msg: " name is :: {{name | lower}}"
      
    - name: Finding Max and Min
      vars:
       number: [1,2,3,4,5,76,78992]
      ansible.builtin.debug:
-      msg: "Max is :: {{ number | min }} and Min is ::{{ number | max }}"
+      msg: "Max is :: {{ number | max }} and Min is ::{{ number | min }}"
 
      
