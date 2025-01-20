@@ -5,3 +5,10 @@
      ansible.builtin.debug:
       msg: "Hello {{ person | default('Adam')}}"
 
+   - name: convert string to list
+     vars:
+      Fruits: "Apple, Banana, Orange"
+     ansible.builtin.debug:
+      msg: "Fruits are: {{Fruits | split(',')}}"
+
+
