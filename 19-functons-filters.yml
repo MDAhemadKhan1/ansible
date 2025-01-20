@@ -43,9 +43,9 @@
       msg: " name is :: {{name}}"
      
    - name: Finding Max and Min
-      vars:
-       number: [1,2,3,4,5,76,78992]
-      ansible.builtin.debug:
-       msg: "Max is :: {{ number | min }} and Min is ::{{ number | max }}"
+     vars:
+      number: [1,2,3,4,5,76,78992]
+     ansible.builtin.debug:
+      msg: "Max is :: {{ number | min }} and Min is ::{{ number | max }}"
 
      
