@@ -11,11 +11,11 @@
      ansible.builtin.debug:
       msg: "Fruits are: {{Fruits | split(',')}}"
 
-   - name: 
+   - name: Converting Map to list
      vars:
       Course:
        name: DevOps
        duration: 120hrs
        trainer: Asif
      ansible.builtin.debug:
-      msg: "Course info :: Course is {{Course.name}} duration is {{Course.duration}} trainer is {{Course.trainer}}"  
+      msg: "Course info :: {{ Course | dict2items }}""
