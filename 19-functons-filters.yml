@@ -27,9 +27,25 @@
        - {'key': 'name', 'value': 'DevOps'}
        - {'key': 'duration', 'value': '120hrs'}
        - {'key': 'trainer', 'value': 'Asif'}
-       
      ansible.builtin.debug:
       msg: "Course info :: {{ Course | items2dict }}"
 
+   - name: Converting to Upper
+     vars:
+      name: "Asif"
+     ansible.builtin.debug:
+      msg: " name is :: {{name}}"
+
+   - name: Converting to lower
+     vars:
+      name: "Asif"
+     ansible.builtin.debug:
+      msg: " name is :: {{name}}"
+     
+   - name: Finding Max and Min
+      vars:
+       number: [1,2,3,4,5,76,78992]
+      ansible.builtin.debug:
+       msg: "Max is :: {{ number | min }} and Min is ::{{ number | max }}"
 
      
